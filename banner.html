@@ -52,13 +52,6 @@
 </head>
 
 <body>
-  <header class="navbar-fixed-top">
-    <nav>
-        <ul>
-            <li><a href="#main">Top</a></li>
-        </ul>
-    </nav>
-</header>
   <main id="main">
 
     <div class="site-section">
@@ -168,6 +161,47 @@
 
 <script src="js/custom.js"></script>
     <script src="/iPortfolio/video gallery/js/script.js"></script>
+
+  
+    <a href="#" class="scrollToTop"><img src="img/pngwing.com (4).png" width="32" height="32" alt=""></a>
+
+    <script>
+
+        $(document).ready(function(){
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollToTop').fadeIn();
+        } else {
+        $('.scrollToTop').fadeOut();
+        }
+        });
+        //Click event to scroll to top
+        $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+        });
+        });
+        </script>
+
+<script>
+
+    $(document).ready(function(){
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+    $('.message').fadeIn();
+    } else {
+    $('.message').fadeOut();
+    }
+    });
+    //Click event to scroll to top
+    $('.message').click(function(){
+    $('html, body').animate({scrollTop : 9000},800);
+    return false;
+    });
+    });
+    </script>
 
   
 
