@@ -191,6 +191,12 @@ span{
   font-size: 28px;
 }
 
+.center {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
 p{text-align: center !important;
 margin: auto;}
 
